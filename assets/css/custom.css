@@ -2,6 +2,14 @@
     text-transform: capitalize !important;
 }
 
+.cngLanguage{
+    z-index: 999999 !important;
+}
+
+.mainNav{
+    z-index: 99999 !important;
+}
+
 p{
     text-align: justify !important;
 }

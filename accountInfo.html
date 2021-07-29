@@ -28,55 +28,59 @@
     </div>
     <div class="col-12 col-sm-3 d-none d-sm-inline-block text-right">
       <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a href="" class="nav-link link-secondary">
+        <li class="nav-item dropdown">
+          <a href="" class="nav-link link-secondary" data-bs-toggle="dropdown">
             <i class="bi bi-translate"></i>
             <span>Language</span>
           </a>
+          <ul class="dropdown-menu bg-dark text-center text-md-start cngLanguage">
+            <li><a class="dropdown-item link-secondary small fw-bolder bg-dark" href="#">Bangla</a></li>
+            <li><a class="dropdown-item link-secondary small fw-bolder bg-dark" href="#">English</a></li>
+          </ul>
         </li>
       </ul>
     </div>
   </div>
 </div>
-  <nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top fw-bolder">
-    <a href="index.html" class="navbar-brand">Logo</a>
-    <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target=".mainManu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="navbar-collapse collapse mainManu justify-content-between text-center">
-      <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle link-secondary" data-bs-toggle="dropdown"
-             id="categories">Categories</a>
-          <ul class="dropdown-menu bg-dark text-center text-md-start" aria-labelledby="categories">
-            <li><a class="dropdown-item link-secondary small fw-bolder bg-dark" href="#">Category 1</a></li>
-            <li><a class="dropdown-item link-secondary small fw-bolder bg-dark" href="#">Category 2</a></li>
-            <li><a class="dropdown-item link-secondary small fw-bolder bg-dark" href="#">Category 3</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="mx-auto form-inline justify-content-around w-50" method="post" action="" autocomplete="off">
-        <div class="input-group input-group-sm w-100">
-          <input type="search" class="form-control form-control-sm bg-dark border border-secondary text-secondary shadow-none"
-                 placeholder="Search your products or categories">
-          <button class="btn shadow-none btn-secondary shadow-none" type="submit"><i class="bi bi-search"></i></button>
-        </div>
-      </form>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link link-secondary" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link link-secondary" href="">Contact</a>
-        </li>
-      </ul>
-      <a class="text-decoration-none text-dark bg-secondary rounded px-2" href="">
-        <i class="bi bi-bag-fill"></i>
-        <span>Cart - 10$</span>
-        <span class="badge rounded-pill bg-dark">5</span>
-      </a>
-    </div>
-  </nav>
+<nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top fw-bolder mainNav">
+  <a href="index.html" class="navbar-brand">Logo</a>
+  <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target=".mainManu">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar-collapse collapse mainManu justify-content-between text-center">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle link-secondary" data-bs-toggle="dropdown"
+           id="categories">Categories</a>
+        <ul class="dropdown-menu bg-dark text-center text-md-start" aria-labelledby="categories">
+          <li><a class="dropdown-item link-secondary small fw-bolder bg-dark" href="#">Category 1</a></li>
+          <li><a class="dropdown-item link-secondary small fw-bolder bg-dark" href="#">Category 2</a></li>
+          <li><a class="dropdown-item link-secondary small fw-bolder bg-dark" href="#">Category 3</a></li>
+        </ul>
+      </li>
+    </ul>
+    <form class="mx-auto form-inline justify-content-around w-50" method="post" action="" autocomplete="off">
+      <div class="input-group input-group-sm w-100">
+        <input type="search" class="form-control form-control-sm bg-dark border border-secondary text-secondary shadow-none"
+               placeholder="Search your products or categories">
+        <button class="btn shadow-none btn-secondary shadow-none" type="submit"><i class="bi bi-search"></i></button>
+      </div>
+    </form>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link link-secondary" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link-secondary" href="">Contact</a>
+      </li>
+    </ul>
+    <a class="text-decoration-none text-dark bg-secondary rounded px-2" href="">
+      <i class="bi bi-bag-fill"></i>
+      <span>Cart - 10$</span>
+      <span class="badge rounded-pill bg-dark">5</span>
+    </a>
+  </div>
+</nav>
 
   <div class="container-fluid bg-dark">
     <div class="row">
