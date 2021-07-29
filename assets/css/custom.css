@@ -1,0 +1,32 @@
+::placeholder{
+    text-transform: capitalize !important;
+}
+
+p{
+    text-align: justify !important;
+}
+
+.categoriesManu{
+    margin-top: 10px !important;
+}
+
+.mainHomeSlider img{
+    height: 20rem;
+}
+
+.carousel-control-prev{
+    left: -90px;
+}
+.carousel-control-next{
+    right: -90px;
+}
+
+.editInfo textarea{
+    resize: none;
+    height: 20vh;
+}
+
+.myWishlist .img-fluid{
+    width: 5rem !important;
+    height: 3rem !important;
+}

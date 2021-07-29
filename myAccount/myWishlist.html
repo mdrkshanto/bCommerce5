@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" class="text-capitalize">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eCommerce - 5</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="bg-secondary small text-secondary shadow-none">
+<div class="container-fluid bg-dark">
+  <div class="row fw-bolder">
+    <div class="col-12 col-sm-9">
+      <ul class="nav text-capitalize">
+        <li class="nav-item">
+          <a href="accountInfo.html" class="link-secondary nav-link">
+            <i class="fas fa-user-circle"></i>
+            <span>My Account</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="link-secondary nav-link">
+            <i class="fas fa-sign-in-alt"></i>
+            <span>Login|Register|Logout</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-12 col-sm-3 d-none d-sm-inline-block text-right">
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a href="" class="nav-link link-secondary">
+            <i class="bi bi-translate"></i>
+            <span>Language</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top fw-bolder">
+  <a href="../index.html" class="navbar-brand">Logo</a>
+  <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target=".mainManu">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar-collapse collapse mainManu justify-content-between text-center">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle link-secondary" data-bs-toggle="dropdown"
+           id="categories">Categories</a>
+        <ul class="dropdown-menu bg-dark text-center text-md-start" aria-labelledby="categories">
+          <li><a class="dropdown-item link-secondary small fw-bolder bg-dark" href="#">Category 1</a></li>
+          <li><a class="dropdown-item link-secondary small fw-bolder bg-dark" href="#">Category 2</a></li>
+          <li><a class="dropdown-item link-secondary small fw-bolder bg-dark" href="#">Category 3</a></li>
+        </ul>
+      </li>
+    </ul>
+    <form class="mx-auto form-inline justify-content-around w-50" method="post" action="" autocomplete="off">
+      <div class="input-group input-group-sm w-100">
+        <input type="search" class="form-control form-control-sm bg-dark border border-secondary text-secondary shadow-none"
+               placeholder="Search your products or categories">
+        <button class="btn shadow-none btn-secondary shadow-none" type="submit"><i class="bi bi-search"></i></button>
+      </div>
+    </form>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link link-secondary" href="../index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link-secondary" href="">Contact</a>
+      </li>
+    </ul>
+    <a class="text-decoration-none text-dark bg-secondary rounded px-2" href="">
+      <i class="bi bi-bag-fill"></i>
+      <span>Cart - 10$</span>
+      <span class="badge rounded-pill bg-dark">5</span>
+    </a>
+  </div>
+</nav>
+
+<div class="container-fluid bg-dark">
+  <div class="row">
+    <div class="col-12 col-md-3 border border-secondary">
+      <div class="container">
+        <h5 class="text-secondary mt-3">My Account</h5>
+        <ul class="nav nav-pills flex-column text-capitalize fw-bolder">
+          <li class="nav-item border-bottom border-secondary">
+            <a href="accountInfo.html" class="nav-link link-secondary">Account Information</a>
+          </li>
+          <li class="nav-item border-bottom border-secondary">
+            <a href="myOrders.html" class="nav-link link-secondary">My Orders</a>
+          </li>
+          <li class="nav-item border-bottom border-secondary">
+            <a href="myWishlist.html" class="nav-link link-secondary bg-dark active">My Wishlist</a>
+          </li>
+          <li class="nav-item">
+            <a href="changePassword.html" class="nav-link link-secondary">Change Password</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-12 col-md-9">
+      <div class="container myWishlist">
+        <div class="card bg-dark">
+          <div class="card-header">
+            <h5>My Wishlist</h5>
+          </div>
+          <div class="card-body">
+            <table class="table table-bordered table-sm table-responsive align-middle table-dark table-striped table-hover">
+              <thead>
+              <tr class="text-capitalize text-secondary text-center">
+                <th>Thumbnail</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Action</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr class="text-secondary text-center">
+                <td><img src="../assets/img/5.jpg" class="img-fluid rounded"></td>
+                <td>Lorem ipsum.</td>
+                <td>7,85,152 ৳</td>
+                <td>
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle link-secondary m-0 p-0" data-bs-toggle="dropdown">Action</a>
+                      <ul class="dropdown-menu bg-transparent border-0 text-center">
+                        <li><button class="btn btn-sm small shadow-none btn-primary">
+                          <span><i class="bi bi-bag-plus-fill"></i></span>
+                          <span>Add to Cart</span>
+                        </button></li>
+                        <li><button class="btn btn-sm small shadow-none btn-warning">
+                          <span><i class="bi bi-bag-check-fill"></i></span>
+                          <span>Buy Now</span>
+                        </button></li>
+                        <li><button class="btn btn-sm small shadow-none btn-danger">
+                          <span><i class="bi bi-trash-fill"></i></span>
+                          <span>Remove</span>
+                        </button></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr class="text-secondary text-center">
+                <td><img src="../assets/img/5.jpg" class="img-fluid rounded"></td>
+                <td>Lorem ipsum.</td>
+                <td>7,85,152 ৳</td>
+                <td>
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle link-secondary m-0 p-0" data-bs-toggle="dropdown">Action</a>
+                      <ul class="dropdown-menu bg-transparent border-0 text-center">
+                        <li><button class="btn btn-sm small shadow-none btn-primary">
+                          <span><i class="bi bi-bag-plus-fill"></i></span>
+                          <span>Add to Cart</span>
+                        </button></li>
+                        <li><button class="btn btn-sm small shadow-none btn-warning">
+                          <span><i class="bi bi-bag-check-fill"></i></span>
+                          <span>Buy Now</span>
+                        </button></li>
+                        <li><button class="btn btn-sm small shadow-none btn-danger">
+                          <span><i class="bi bi-trash-fill"></i></span>
+                          <span>Remove</span>
+                        </button></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr class="text-secondary text-center">
+                <td><img src="../assets/img/5.jpg" class="img-fluid rounded"></td>
+                <td>Lorem ipsum.</td>
+                <td>7,85,152 ৳</td>
+                <td>
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle link-secondary m-0 p-0" data-bs-toggle="dropdown">Action</a>
+                      <ul class="dropdown-menu bg-transparent border-0 text-center">
+                        <li><button class="btn btn-sm small shadow-none btn-primary">
+                          <span><i class="bi bi-bag-plus-fill"></i></span>
+                          <span>Add to Cart</span>
+                        </button></li>
+                        <li><button class="btn btn-sm small shadow-none btn-warning">
+                          <span><i class="bi bi-bag-check-fill"></i></span>
+                          <span>Buy Now</span>
+                        </button></li>
+                        <li><button class="btn btn-sm small shadow-none btn-danger">
+                          <span><i class="bi bi-trash-fill"></i></span>
+                          <span>Remove</span>
+                        </button></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr class="text-secondary text-center">
+                <td><img src="../assets/img/5.jpg" class="img-fluid rounded"></td>
+                <td>Lorem ipsum.</td>
+                <td>7,85,152 ৳</td>
+                <td>
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle link-secondary m-0 p-0" data-bs-toggle="dropdown">Action</a>
+                      <ul class="dropdown-menu bg-transparent border-0 text-center">
+                        <li><button class="btn btn-sm small shadow-none btn-primary">
+                          <span><i class="bi bi-bag-plus-fill"></i></span>
+                          <span>Add to Cart</span>
+                        </button></li>
+                        <li><button class="btn btn-sm small shadow-none btn-warning">
+                          <span><i class="bi bi-bag-check-fill"></i></span>
+                          <span>Buy Now</span>
+                        </button></li>
+                        <li><button class="btn btn-sm small shadow-none btn-danger">
+                          <span><i class="bi bi-trash-fill"></i></span>
+                          <span>Remove</span>
+                        </button></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr class="text-secondary text-center">
+                <td><img src="../assets/img/5.jpg" class="img-fluid rounded"></td>
+                <td>Lorem ipsum.</td>
+                <td>7,85,152 ৳</td>
+                <td>
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle link-secondary m-0 p-0" data-bs-toggle="dropdown">Action</a>
+                      <ul class="dropdown-menu bg-transparent border-0 text-center">
+                        <li><button class="btn btn-sm small shadow-none btn-primary">
+                          <span><i class="bi bi-bag-plus-fill"></i></span>
+                          <span>Add to Cart</span>
+                        </button></li>
+                        <li><button class="btn btn-sm small shadow-none btn-warning">
+                          <span><i class="bi bi-bag-check-fill"></i></span>
+                          <span>Buy Now</span>
+                        </button></li>
+                        <li><button class="btn btn-sm small shadow-none btn-danger">
+                          <span><i class="bi bi-trash-fill"></i></span>
+                          <span>Remove</span>
+                        </button></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr class="text-secondary text-center">
+                <td><img src="../assets/img/5.jpg" class="img-fluid rounded"></td>
+                <td>Lorem ipsum.</td>
+                <td>7,85,152 ৳</td>
+                <td>
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle link-secondary m-0 p-0" data-bs-toggle="dropdown">Action</a>
+                      <ul class="dropdown-menu bg-transparent border-0 text-center">
+                        <li><button class="btn btn-sm small shadow-none btn-primary">
+                          <span><i class="bi bi-bag-plus-fill"></i></span>
+                          <span>Add to Cart</span>
+                        </button></li>
+                        <li><button class="btn btn-sm small shadow-none btn-warning">
+                          <span><i class="bi bi-bag-check-fill"></i></span>
+                          <span>Buy Now</span>
+                        </button></li>
+                        <li><button class="btn btn-sm small shadow-none btn-danger">
+                          <span><i class="bi bi-trash-fill"></i></span>
+                          <span>Remove</span>
+                        </button></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid bg-dark border-top border-secondary pt-5">
+  <div class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <h2>Logo</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sunt id doloribus vero quam laborum quas alias dolores blanditiis iusto consequatur, modi aliquid eveniet eligendi iure eaque ipsam iste, pariatur omnis sint! Suscipit, debitis, quisquam. Laborum commodi veritatis magni at?</p>
+          <div>
+            <a href="#" target="_blank" class="h3 text-secondary text-decoration-none"><i class="bi bi-facebook"></i></a>
+            <a href="#" target="_blank" class="h3 text-secondary text-decoration-none"><i class="bi bi-twitter"></i></a>
+            <a href="#" target="_blank" class="h3 text-secondary text-decoration-none"><i class="bi bi-youtube"></i></a>
+            <a href="#" target="_blank" class="h3 text-secondary text-decoration-none"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <h2 class="">Quick Links</h2>
+          <ul class="nav navbar-nav fw-bolder">
+            <li class="nav-item"><a href="#" class="nav-link link-secondary">My account</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-secondary">Order history</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-secondary">Wishlist</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-secondary">Vendor contact</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-secondary">Front page</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <h2 class="">Help</h2>
+          <ul class="navbar-nav nav fw-bolder">
+            <li class="nav-item"><a href="#" class="nav-link link-secondary">Mobile Phone</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-secondary">Home accesseries</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-secondary">LED TV</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-secondary">Computer</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-secondary">Gadets</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <h2 class="footer-wid-title">Newsletter</h2>
+          <p>Sign up to our newsletter and get exclusive deals you wont find anywhere else straight to your
+            inbox!</p>
+          <form action="#" method="post" autocomplete="off">
+            <input class="form-control form-control-sm bg-dark border border-secondary text-secondary shadow-none" type="email"
+                   placeholder="Type your email">
+            <input class="btn btn-sm shadow-none btn-secondary" type="submit" value="Subscribe">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="bg-dark pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <p>&copy; 2015 uCommerce. All Rights Reserved. <a class="text-decoration-none link-secondary fw-bolder"
+                                                            href="http://www.freshdesignweb.com"
+                                                            target="_blank">
+            freshDesignweb.com</a></p>
+        </div>
+
+        <div class="col-md-4">
+          <i class="h1 fab fa-cc-discover"></i>
+          <i class="h1 fab fa-cc-mastercard"></i>
+          <i class="h1 fab fa-cc-paypal"></i>
+          <i class="h1 fab fa-cc-visa"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/jquery-ui.min.js"></script>
+<script src="../assets/js/bootstrap.bundle.js"></script>
+<script src="../assets/js/slick.min.js"></script>
+<script src="../assets/js/homeSliders.js"></script>
+</html>
