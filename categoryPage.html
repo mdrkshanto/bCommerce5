@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="text-capitalize">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
   <title>eCommerce - 5</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-secondary small text-secondary shadow-none">
+<body class="bg-secondary small text-secondary">
 <div class="container-fluid bg-dark">
   <div class="row fw-bolder">
     <div class="col-12 col-sm-9">
@@ -82,109 +82,98 @@
   </div>
 </nav>
 
+
 <div class="container-fluid bg-dark">
   <div class="row">
-    <div class="col-12 col-md-3 border border-secondary">
+    <div class="col-12 col-md-3 border border-secondary rounded">
+      <h4 class="border-bottom border-secondary text-secondary text-capitalize text-center">Filter</h4>
       <div class="container">
-        <h5 class="text-secondary mt-3">My Account</h5>
-        <ul class="nav nav-pills flex-column text-capitalize fw-bolder">
-          <li class="nav-item border-bottom border-secondary">
-            <a href="accountInfo.html" class="nav-link link-secondary">Account Information</a>
-          </li>
-          <li class="nav-item border-bottom border-secondary">
-            <a href="myOrders.html" class="nav-link link-secondary">My Orders</a>
-          </li>
-          <li class="nav-item border-bottom border-secondary">
-            <a href="myWishlist.html" class="nav-link link-secondary">My Wishlist</a>
-          </li>
-          <li class="nav-item">
-            <a href="changePassword.html" class="nav-link link-secondary bg-dark active">Change Password</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="col-12 col-md-5">
-      <div class="container">
-        <div class="card bg-dark">
-          <div class="card-header">
-            <h5>Change Password</h5>
-          </div>
-          <div class="card-body">
-            <form action="" method="post" autocomplete="off">
-              <div class="input-group input-group-sm">
-                <span class="input-group-text bg-dark text-secondary border-secondary">
-                    <i class="bi bi-shield-fill"></i>
-                  </span>
-                <input type="password" required
-                       class="form-control bg-dark text-secondary border border-end-0 border-secondary shadow-none"
-                       placeholder="Enter Your Old Password">
-                <span class="input-group-text bg-dark text-secondary border border-start-0 border-secondary">
-                  <i class="bi bi-eye-fill"></i>
-                </span>
+        <div class="row">
+            <form action="" method="post">
+              <div class="my-3">
+                <h5 class="border-bottom border-secondary text-secondary text-capitalize">Subcategories</h5>
+                <div class="form-check">
+                  <input class="form-check-input bg-dark text-secondary shadow-none border-secondary" type="checkbox" value="1">
+                  <label class="form-check-label">
+                    <span>Subcategory</span>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input bg-dark text-secondary shadow-none border-secondary" type="checkbox" value="1">
+                  <label class="form-check-label">
+                    <span>Subcategory</span>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input bg-dark text-secondary shadow-none border-secondary" type="checkbox" value="1">
+                  <label class="form-check-label">
+                    <span>Subcategory</span>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input bg-dark text-secondary shadow-none border-secondary" type="checkbox" value="1">
+                  <label class="form-check-label">
+                    <span>Subcategory</span>
+                  </label>
+                </div>
               </div>
-              <div class="input-group input-group-sm">
-                <span class="input-group-text bg-dark text-secondary border-secondary">
-                    <i class="bi bi-shield-lock-fill"></i>
-                  </span>
-                <input type="text" required
-                       class="form-control bg-dark text-secondary border border-end-0 border-secondary shadow-none"
-                       placeholder="Enter New Password">
-                <span class="input-group-text bg-dark text-secondary border border-start-0 border-secondary">
-                  <i class="bi bi-eye-slash-fill"></i>
-                </span>
+              <div class="my-3">
+                <h5 class="border-bottom border-secondary text-secondary text-capitalize">Colors</h5>
+                <div class="form-check">
+                  <input class="form-check-input bg-dark text-secondary shadow-none border-secondary" type="checkbox" value="1">
+                  <label class="form-check-label">
+                    <span>Color</span>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input bg-dark text-secondary shadow-none border-secondary" type="checkbox" value="1">
+                  <label class="form-check-label">
+                    <span>Color</span>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input bg-dark text-secondary shadow-none border-secondary" type="checkbox" value="1">
+                  <label class="form-check-label">
+                    <span>Color</span>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input bg-dark text-secondary shadow-none border-secondary" type="checkbox" value="1">
+                  <label class="form-check-label">
+                    <span>Color</span>
+                  </label>
+                </div>
               </div>
-              <div class="input-group input-group-sm">
-                <span class="input-group-text bg-dark text-secondary border-secondary">
-                    <i class="bi bi-shield-lock-fill"></i>
-                  </span>
-                <input type="text" required
-                       class="form-control bg-dark text-secondary border border-end-0 border-secondary shadow-none"
-                       placeholder="Confirm New Password">
-                <span class="input-group-text bg-dark text-secondary border border-start-0 border-secondary">
-                  <i class="bi bi-eye-slash-fill"></i>
-                </span>
+              <div class="my-3">
+                <h5 class="border-bottom border-secondary text-secondary text-capitalize">Price Range</h5>
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="input-group input-group-sm">
+                      <input type="number" class="form-control bg-dark border-secondary shadow-none text-secondary"
+                             placeholder="Min">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="input-group input-group-sm">
+                      <input type="number" class="form-control bg-dark border-secondary shadow-none text-secondary"
+                             placeholder="Max">
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="input-group input-group-sm mt-1">
-                <button type="button" class="btn btn-sm btn-secondary shadow-none" data-bs-toggle="modal" data-bs-target=".cngPass">Submit</button>
+              <div class="my-3">
+                <div class="d-grid">
+                  <button class="btn btn-sm btn-secondary shadow-none" type="submit">Filter</button>
+                </div>
               </div>
             </form>
-          </div>
         </div>
       </div>
-      <!-- Modal -->
-      <div class="modal fade cngPass" data-bs-backdrop="static" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-          <div class="modal-content bg-dark">
-            <div class="modal-header">
-              <h5 class="modal-title">Submit OTP</h5>
-            </div>
-            <div class="modal-body">
-              <form action="" method="post" autocomplete="off">
-                <div class="input-group input-group-sm">
-                  <span class="input-group-text bg-dark text-capitalize text-secondary border-secondary">
-                    <i class="bi bi-shield-shaded"></i>
-                  </span>
-                  <input type="text" required class="form-control bg-dark text-capitalize text-secondary border border-secondary shadow-none"
-                         placeholder="Enter Your OTP">
-                  <span class="input-group-text bg-dark text-capitalize text-secondary border-secondary">
-                    <i class="bi bi-shield-fill-exclamation"></i>
-                    <i class="bi bi-shield-fill-check"></i>
-                  </span>
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <form action="" method="post">
-                <button type="submit" class="btn btn-secondary btn-sm shadow-none">Submit</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal End -->
     </div>
+    <div class="col12 col-md-9">asdfasdfasdf</div>
   </div>
 </div>
+
 
 <footer class="container-fluid bg-dark border-top border-secondary pt-5">
   <div class="bg-dark">
