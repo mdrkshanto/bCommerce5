@@ -74,20 +74,23 @@
         <a class="nav-link link-secondary" href="">Contact</a>
       </li>
     </ul>
-    <a class="text-decoration-none text-dark bg-secondary rounded px-2" href="">
+    <a class="position-relative text-decoration-none link-dark bg-secondary rounded px-2" href="">
       <i class="bi bi-bag-fill"></i>
       <span>Cart - 10$</span>
-      <span class="badge rounded-pill bg-dark">5</span>
+      <span class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-secondary text-dark">5</span>
     </a>
   </div>
 </nav>
 
 
-<div class="container-fluid bg-dark">
+<div class="container-fluid bg-dark categoryPage">
   <div class="row">
-    <div class="col-12 col-md-3 border border-secondary rounded">
+    <div class="col-12 col-md-3 border border-secondary rounded navbar-dark navbar-expand-md">
       <h4 class="border-bottom border-secondary text-secondary text-capitalize text-center">Filter</h4>
-      <div class="container">
+      <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target=".categoryFilter">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="container navbar-collapse collapse categoryFilter">
         <div class="row">
             <form action="" method="post">
               <div class="my-3">
@@ -170,35 +173,268 @@
         </div>
       </div>
     </div>
-    <div class="col12 col-md-9 border border-secondary rounded">
+    <div class="col12 col-md-9 border border-secondary rounded categoryProducts">
       <h3>Category or Subcategory Name</h3>
-      <div class="container-fluid my-3">
-        <div class="row">
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <a href="singlePage.html" class="text-decoration-none text-secondary">
-              <div class="card bg-dark">
-                <img src="assets/img/6.jpg" class="card-img-top img-fluid" alt="Product Name">
-                <div class="card-body">
-                  <h5 class="card-title link-secondary text-center text-capitalize">Product Name</h5>
-                  <div class="row">
-                    <div class="col-4">
-                      <span>৳1,000</span>
-                    </div>
-                    <div class="col-4">
-                      ৳<del>1,500</del>
-                    </div>
-                    <div class="col-4"></div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3 product">
+          <a href="singlePage.html" class="text-decoration-none text-secondary">
+            <div class="card bg-dark">
+              <img src="assets/img/6.jpg" class="card-img-top img-fluid" alt="Product Name">
+              <h5 class="card-title link-secondary text-center text-capitalize">Product Name</h5>
+              <span class="position-absolute top-0 start-0 badge rounded-pill bg-success text-dark">New</span>
+              <div class="card-body">
+                <div class="row my-1">
+                  <div class="col-6 text-start">
+                    <span class="badge rounded-pill bg-info text-dark">৳1,000</span>
+                  </div>
+                  <div class="col-6 text-end">
+                    <span class="badge rounded-pill bg-warning">৳<del>1,500</del></span>
+                    <span class="position-absolute top-0 end-0 badge rounded-pill bg-success text-dark">50% Off</span>
+                  </div>
+                </div>
+                <div class="row my-1">
+                  <div class="col-12 text-capitalize">
+                    <h6 class="card-title text-capitalize">Short Description</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, hic?</p>
                   </div>
                 </div>
               </div>
-            </a>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <a href="singlePage.html" class="text-decoration-none text-secondary">
-            </a>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3"></div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3"></div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3 product">
+          <a href="singlePage.html" class="text-decoration-none text-secondary">
+            <div class="card bg-dark">
+              <img src="assets/img/6.jpg" class="card-img-top img-fluid" alt="Product Name">
+              <h5 class="card-title link-secondary text-center text-capitalize">Product Name</h5>
+              <span class="position-absolute top-0 start-0 badge rounded-pill bg-success text-dark">New</span>
+              <div class="card-body">
+                <div class="row my-1">
+                  <div class="col-6 text-start">
+                    <span class="badge rounded-pill bg-info text-dark">৳1,000</span>
+                  </div>
+                  <div class="col-6 text-end">
+                    <span class="badge rounded-pill bg-warning">৳<del>1,500</del></span>
+                    <span class="position-absolute top-0 end-0 badge rounded-pill bg-success text-dark">50% Off</span>
+                  </div>
+                </div>
+                <div class="row my-1">
+                  <div class="col-12 text-capitalize">
+                    <h6 class="card-title text-capitalize">Short Description</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, hic?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3 product">
+          <a href="singlePage.html" class="text-decoration-none text-secondary">
+            <div class="card bg-dark">
+              <img src="assets/img/6.jpg" class="card-img-top img-fluid" alt="Product Name">
+              <h5 class="card-title link-secondary text-center text-capitalize">Product Name</h5>
+              <span class="position-absolute top-0 start-0 badge rounded-pill bg-success text-dark">New</span>
+              <div class="card-body">
+                <div class="row my-1">
+                  <div class="col-6 text-start">
+                    <span class="badge rounded-pill bg-info text-dark">৳1,000</span>
+                  </div>
+                  <div class="col-6 text-end">
+                    <span class="badge rounded-pill bg-warning">৳<del>1,500</del></span>
+                    <span class="position-absolute top-0 end-0 badge rounded-pill bg-success text-dark">50% Off</span>
+                  </div>
+                </div>
+                <div class="row my-1">
+                  <div class="col-12 text-capitalize">
+                    <h6 class="card-title text-capitalize">Short Description</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, hic?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3 product">
+          <a href="singlePage.html" class="text-decoration-none text-secondary">
+            <div class="card bg-dark">
+              <img src="assets/img/6.jpg" class="card-img-top img-fluid" alt="Product Name">
+              <h5 class="card-title link-secondary text-center text-capitalize">Product Name</h5>
+              <span class="position-absolute top-0 start-0 badge rounded-pill bg-success text-dark">New</span>
+              <div class="card-body">
+                <div class="row my-1">
+                  <div class="col-6 text-start">
+                    <span class="badge rounded-pill bg-info text-dark">৳1,000</span>
+                  </div>
+                  <div class="col-6 text-end">
+                    <span class="badge rounded-pill bg-warning">৳<del>1,500</del></span>
+                    <span class="position-absolute top-0 end-0 badge rounded-pill bg-success text-dark">50% Off</span>
+                  </div>
+                </div>
+                <div class="row my-1">
+                  <div class="col-12 text-capitalize">
+                    <h6 class="card-title text-capitalize">Short Description</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, hic?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3 product">
+          <a href="singlePage.html" class="text-decoration-none text-secondary">
+            <div class="card bg-dark">
+              <img src="assets/img/6.jpg" class="card-img-top img-fluid" alt="Product Name">
+              <h5 class="card-title link-secondary text-center text-capitalize">Product Name</h5>
+              <span class="position-absolute top-0 start-0 badge rounded-pill bg-success text-dark">New</span>
+              <div class="card-body">
+                <div class="row my-1">
+                  <div class="col-6 text-start">
+                    <span class="badge rounded-pill bg-info text-dark">৳1,000</span>
+                  </div>
+                  <div class="col-6 text-end">
+                    <span class="badge rounded-pill bg-warning">৳<del>1,500</del></span>
+                    <span class="position-absolute top-0 end-0 badge rounded-pill bg-success text-dark">50% Off</span>
+                  </div>
+                </div>
+                <div class="row my-1">
+                  <div class="col-12 text-capitalize">
+                    <h6 class="card-title text-capitalize">Short Description</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, hic?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3 product">
+          <a href="singlePage.html" class="text-decoration-none text-secondary">
+            <div class="card bg-dark">
+              <img src="assets/img/6.jpg" class="card-img-top img-fluid" alt="Product Name">
+              <h5 class="card-title link-secondary text-center text-capitalize">Product Name</h5>
+              <span class="position-absolute top-0 start-0 badge rounded-pill bg-success text-dark">New</span>
+              <div class="card-body">
+                <div class="row my-1">
+                  <div class="col-6 text-start">
+                    <span class="badge rounded-pill bg-info text-dark">৳1,000</span>
+                  </div>
+                  <div class="col-6 text-end">
+                    <span class="badge rounded-pill bg-warning">৳<del>1,500</del></span>
+                    <span class="position-absolute top-0 end-0 badge rounded-pill bg-success text-dark">50% Off</span>
+                  </div>
+                </div>
+                <div class="row my-1">
+                  <div class="col-12 text-capitalize">
+                    <h6 class="card-title text-capitalize">Short Description</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, hic?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3 product">
+          <a href="singlePage.html" class="text-decoration-none text-secondary">
+            <div class="card bg-dark">
+              <img src="assets/img/6.jpg" class="card-img-top img-fluid" alt="Product Name">
+              <h5 class="card-title link-secondary text-center text-capitalize">Product Name</h5>
+              <span class="position-absolute top-0 start-0 badge rounded-pill bg-success text-dark">New</span>
+              <div class="card-body">
+                <div class="row my-1">
+                  <div class="col-6 text-start">
+                    <span class="badge rounded-pill bg-info text-dark">৳1,000</span>
+                  </div>
+                  <div class="col-6 text-end">
+                    <span class="badge rounded-pill bg-warning">৳<del>1,500</del></span>
+                    <span class="position-absolute top-0 end-0 badge rounded-pill bg-success text-dark">50% Off</span>
+                  </div>
+                </div>
+                <div class="row my-1">
+                  <div class="col-12 text-capitalize">
+                    <h6 class="card-title text-capitalize">Short Description</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, hic?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3 product">
+          <a href="singlePage.html" class="text-decoration-none text-secondary">
+            <div class="card bg-dark">
+              <img src="assets/img/6.jpg" class="card-img-top img-fluid" alt="Product Name">
+              <h5 class="card-title link-secondary text-center text-capitalize">Product Name</h5>
+              <span class="position-absolute top-0 start-0 badge rounded-pill bg-success text-dark">New</span>
+              <div class="card-body">
+                <div class="row my-1">
+                  <div class="col-6 text-start">
+                    <span class="badge rounded-pill bg-info text-dark">৳1,000</span>
+                  </div>
+                  <div class="col-6 text-end">
+                    <span class="badge rounded-pill bg-warning">৳<del>1,500</del></span>
+                    <span class="position-absolute top-0 end-0 badge rounded-pill bg-success text-dark">50% Off</span>
+                  </div>
+                </div>
+                <div class="row my-1">
+                  <div class="col-12 text-capitalize">
+                    <h6 class="card-title text-capitalize">Short Description</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, hic?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3 product">
+          <a href="singlePage.html" class="text-decoration-none text-secondary">
+            <div class="card bg-dark">
+              <img src="assets/img/6.jpg" class="card-img-top img-fluid" alt="Product Name">
+              <h5 class="card-title link-secondary text-center text-capitalize">Product Name</h5>
+              <span class="position-absolute top-0 start-0 badge rounded-pill bg-success text-dark">New</span>
+              <div class="card-body">
+                <div class="row my-1">
+                  <div class="col-6 text-start">
+                    <span class="badge rounded-pill bg-info text-dark">৳1,000</span>
+                  </div>
+                  <div class="col-6 text-end">
+                    <span class="badge rounded-pill bg-warning">৳<del>1,500</del></span>
+                    <span class="position-absolute top-0 end-0 badge rounded-pill bg-success text-dark">50% Off</span>
+                  </div>
+                </div>
+                <div class="row my-1">
+                  <div class="col-12 text-capitalize">
+                    <h6 class="card-title text-capitalize">Short Description</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, hic?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3 product">
+          <a href="singlePage.html" class="text-decoration-none text-secondary">
+            <div class="card bg-dark">
+              <img src="assets/img/6.jpg" class="card-img-top img-fluid" alt="Product Name">
+              <h5 class="card-title link-secondary text-center text-capitalize">Product Name</h5>
+              <span class="position-absolute top-0 start-0 badge rounded-pill bg-success text-dark">New</span>
+              <div class="card-body">
+                <div class="row my-1">
+                  <div class="col-6 text-start">
+                    <span class="badge rounded-pill bg-info text-dark">৳1,000</span>
+                  </div>
+                  <div class="col-6 text-end">
+                    <span class="badge rounded-pill bg-warning">৳<del>1,500</del></span>
+                    <span class="position-absolute top-0 end-0 badge rounded-pill bg-success text-dark">50% Off</span>
+                  </div>
+                </div>
+                <div class="row my-1">
+                  <div class="col-12 text-capitalize">
+                    <h6 class="card-title text-capitalize">Short Description</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, hic?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </div>

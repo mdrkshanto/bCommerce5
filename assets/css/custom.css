@@ -38,3 +38,7 @@ p{
     width: 5rem !important;
     height: 3rem !important;
 }
+
+.categoryPage .categoryProducts .product img{
+    height: 10rem !important;
+}
