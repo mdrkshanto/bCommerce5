@@ -68,8 +68,8 @@ $(document).ready(function(){
     $(".productPage .productThumbnail").slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: false,
         infinite: false,
-        arrows: true
+        arrows: true,
+        draggable: false
     });
 });
