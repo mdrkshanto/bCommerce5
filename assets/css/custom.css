@@ -42,3 +42,11 @@ p{
 .categoryPage .categoryProducts .product img{
     height: 10rem !important;
 }
+
+.productPage img.mainImg{
+    height: 30rem !important;
+}
+
+.productPage .productThumbnail img{
+    height: 6rem !important;
+}
