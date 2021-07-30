@@ -50,3 +50,7 @@ p{
 .productPage .productThumbnail img{
     height: 6rem !important;
 }
+
+.searchPage .searchProducts .product img{
+    height: 10rem !important;
+}
