@@ -85,7 +85,95 @@
 
 <div class="container-fluid bg-dark searchPage">
   <div class="row">
-    <div class="col-12 border border-secondary rounded searchProducts">
+    <div class="col-md-3 rounded navbar-dark navbar-expand-md">
+      <h4 class="border-bottom border-secondary text-secondary text-capitalize text-center">Filter</h4>
+      <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target=".searchFilter">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="container navbar-collapse collapse searchFilter">
+        <div class="row">
+          <form action="" method="post">
+            <div class="my-3">
+              <h5 class="border-bottom border-secondary text-secondary text-capitalize">Subcategories</h5>
+              <div class="form-check">
+                <input class="form-check-input bg-dark text-secondary shadow-none border-secondary" type="checkbox" value="1">
+                <label class="form-check-label">
+                  <span>Subcategory</span>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input bg-dark text-secondary shadow-none border-secondary" type="checkbox" value="1">
+                <label class="form-check-label">
+                  <span>Subcategory</span>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input bg-dark text-secondary shadow-none border-secondary" type="checkbox" value="1">
+                <label class="form-check-label">
+                  <span>Subcategory</span>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input bg-dark text-secondary shadow-none border-secondary" type="checkbox" value="1">
+                <label class="form-check-label">
+                  <span>Subcategory</span>
+                </label>
+              </div>
+            </div>
+            <div class="my-3">
+              <h5 class="border-bottom border-secondary text-secondary text-capitalize">Colors</h5>
+              <div class="form-check">
+                <input class="form-check-input bg-dark text-secondary shadow-none border-secondary" type="checkbox" value="1">
+                <label class="form-check-label">
+                  <span>Color</span>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input bg-dark text-secondary shadow-none border-secondary" type="checkbox" value="1">
+                <label class="form-check-label">
+                  <span>Color</span>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input bg-dark text-secondary shadow-none border-secondary" type="checkbox" value="1">
+                <label class="form-check-label">
+                  <span>Color</span>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input bg-dark text-secondary shadow-none border-secondary" type="checkbox" value="1">
+                <label class="form-check-label">
+                  <span>Color</span>
+                </label>
+              </div>
+            </div>
+            <div class="my-3">
+              <h5 class="border-bottom border-secondary text-secondary text-capitalize">Price Range</h5>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="input-group input-group-sm">
+                    <input type="number" class="form-control bg-dark border-secondary shadow-none text-secondary"
+                           placeholder="Min">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="input-group input-group-sm">
+                    <input type="number" class="form-control bg-dark border-secondary shadow-none text-secondary"
+                           placeholder="Max">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="my-3">
+              <div class="d-grid">
+                <button class="btn btn-sm btn-secondary shadow-none" type="submit">Filter</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9 rounded searchProducts">
       <h3>Search Name</h3>
       <div class="row">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3 product">

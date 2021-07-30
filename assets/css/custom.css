@@ -22,11 +22,8 @@ p{
     height: 20rem;
 }
 
-.carousel-control-prev{
-    left: -90px;
-}
-.carousel-control-next{
-    right: -90px;
+.searchPage .searchProducts .product img{
+    height: 10rem !important;
 }
 
 .editInfo textarea{
@@ -51,6 +48,7 @@ p{
     height: 6rem !important;
 }
 
-.searchPage .searchProducts .product img{
-    height: 10rem !important;
+.productPage .overView .productColor{
+    background-color: #0d6efd !important;
 }
+
