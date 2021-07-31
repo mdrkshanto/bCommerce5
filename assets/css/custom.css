@@ -56,3 +56,12 @@ p{
     resize: none !important;
     height: 5rem !important;
 }
+
+.cartItemsTable .cartItem img{
+    width: 5rem !important;
+    height: 3rem !important;
+}
+
+.cartItemsTable .cartItem td:nth-child(2){
+    width: 7rem !important;
+}
