@@ -133,20 +133,20 @@
             <li class="nav-item"><span>Model:</span> <span>1100</span></li>
             <li class="nav-item"><span>Color:</span> <span class="productColor border border-light rounded">&nbsp; &nbsp; &nbsp;</span></li>
           </ul>
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="input-group input-group-sm w-50">
-                <button class="btn btn-secondary shadow-none" type="button">-</button>
-                <input type="text" class="form-control bg-dark text-center text-secondary border-secondary shadow-none w-50" value="3">
-                <button class="btn btn-secondary shadow-none" type="button">+</button>
+          <form action="" method="post" autocomplete="">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="container">
+                  <div class="input-group input-group-sm flex-nowrap">
+                    <button class="btn btn-secondary shadow-none" type="button">-</button>
+                    <input type="text" class="form-control bg-dark text-center text-secondary border-secondary shadow-none" value="3">
+                    <button class="btn btn-secondary shadow-none" type="button">+</button>
+                    <button class="btn btn-secondary shadow-none ms-3" type="button">Add to Cart</button>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-sm-4">
-              <div class="input-group input-group-sm">
-                <button class="btn btn-secondary shadow-none" type="button">Add to Cart</button>
-              </div>
-            </div>
-          </div>
+          </form>
           <div class="h5 text-secondary text-decoration-underline my-4">Product Details:</div>
           <ul class="productDetails">
             <li>Capacity: 16GB</li>
@@ -162,38 +162,63 @@
     <div class="accordion-item bg-dark text-secondary">
       <h2 class="accordion-header" id="headingOne">
         <button class="accordion-button bg-dark btn-sm btn-dark text-secondary shadow-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true">Product's Description</button>
+                data-bs-target=".productDes"
+                aria-expanded="true"><h4>Product's Description</h4></button>
       </h2>
-      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent=".productOverview">
+      <div class="accordion-collapse collapse productDes show" data-bs-parent=".productOverview">
         <div class="accordion-body">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet illum iste odio quod rem suscipit vero? Cumque et ex illo iure. Architecto assumenda beatae doloribus ex magni tempore voluptates. Ab aspernatur aut cum, deleniti dolor, explicabo fugit illum iste laborum nesciunt provident quod sapiente sunt? Accusamus amet aut beatae corporis cumque ea eos et explicabo id, impedit iste laboriosam nostrum pariatur placeat qui recusandae saepe suscipit tenetur totam ut veritatis vitae voluptas. Ab accusantium amet animi architecto aspernatur atque corporis culpa doloremque doloribus eius et fuga impedit inventore itaque labore laboriosam maxime, nam nihil quaerat quisquam ratione repellat sint vel. Aliquam dolore quae tempore ut! Earum, fugit, magnam! Aliquam amet expedita quasi quisquam saepe ut voluptas. Ab, delectus dolorem impedit iure laborum molestias nostrum numquam obcaecati odit porro provident quaerat quam quia quis quisquam sint totam vitae, voluptatem. Accusantium assumenda ex facilis, illum iure nisi officia porro quo totam ullam!</p>
         </div>
       </div>
     </div>
     <div class="accordion-item bg-dark text-secondary">
-      <h2 class="accordion-header" id="headingTwo">
+      <h2 class="accordion-header">
         <button class="accordion-button collapsed bg-dark btn-sm btn-dark text-secondary shadow-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Accordion Item #2
-        </button>
+                data-bs-target=".review" aria-expanded="false"><h4>Review</h4></button>
       </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent=".productOverview">
+      <div class="accordion-collapse review collapse" data-bs-parent=".productOverview">
         <div class="accordion-body">
-          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          <form action="" method="post" autocomplete="off">
+            <div class="row">
+              <div class="col-md-8 my-3 my-md-0">
+                <h6>Product Review:</h6>
+                <textarea class="form-control bg-dark text-secondary border-secondary text-capitalize shadow-none"
+                          placeholder="Write your honest opinion and give a rating.."></textarea>
+              </div>
+              <div class="col-md-4 my-3 my-md-0">
+                <div class="row">
+                  <div class="col-sm-6 ">
+                    <h6>Rating (<code>Out of 5</code>) :</h6>
+                    <div class="input-group input-group-sm text-center flex-nowrap">
+                      <button class="btn btn-secondary shadow-none" type="button">-</button>
+                      <input type="text" class="form-control bg-dark text-center text-secondary border-secondary shadow-none" value="3">
+                      <button class="btn btn-secondary shadow-none" type="button">+</button>
+                    </div>
+                    <button type="submit" class="btn btn-sm btn-secondary mt-3 shadow-none">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="container">
+
+                </div>
+              </div>
+
+            </div>
+          </form>
         </div>
       </div>
     </div>
     <div class="accordion-item bg-dark text-secondary">
-      <h2 class="accordion-header" id="headingThree">
+      <h2 class="accordion-header">
         <button class="accordion-button collapsed bg-dark btn-sm btn-dark text-secondary shadow-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Accordion Item #3
-        </button>
+                data-bs-target=".deliveryProcess" aria-expanded="false" aria-controls="collapseThree"><h4>Delivery Process</h4></button>
       </h2>
-      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent=".productOverview">
+      <div class="accordion-collapse deliveryProcess collapse" data-bs-parent=".productOverview">
         <div class="accordion-body">
-          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid aut cum cumque deleniti eaque exercitationem, fugiat incidunt ipsa magnam, minus odio perferendis reprehenderit rerum sint tempora totam. Aliquid blanditiis earum enim est impedit incidunt molestiae nemo provident repellendus sequi. Amet aperiam distinctio possimus quam quos reiciendis repellendus sed vel!</p>
         </div>
       </div>
     </div>

@@ -27,8 +27,8 @@ p{
 }
 
 .editInfo textarea{
-    resize: none;
-    height: 20vh;
+    resize: none !important;
+    height: 5rem !important;
 }
 
 .myWishlist .img-fluid{
@@ -52,3 +52,7 @@ p{
     background-color: #0d6efd !important;
 }
 
+.review textarea{
+    resize: none !important;
+    height: 5rem !important;
+}
