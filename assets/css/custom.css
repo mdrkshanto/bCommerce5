@@ -65,3 +65,12 @@ p{
 .cartItemsTable .cartItem td:nth-child(2){
     width: 7rem !important;
 }
+
+.contactPage iframe.map{
+    height: 20rem !important;
+}
+
+.contactPage .message textarea{
+    resize: none !important;
+    height: 9rem !important;
+}
